@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
 form {
     min-width: 400px;
     max-width: 700px;
@@ -11,7 +15,7 @@ form {
 .main-container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
 }
 div.one {
     display: flex;
@@ -34,4 +38,8 @@ div.one input:focus {
 }
 .span-two {
     font-size: 14px;
+}
+textarea {
+    max-width: 500px;
+    min-width: 200px;
 }
