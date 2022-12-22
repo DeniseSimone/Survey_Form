@@ -8,17 +8,53 @@
 }
 :root {
     --black: #000; 
-    --darkColor1: #1B263B; 
-    --darkColor2: #415A77;
-    --lightColor1: #778DA9;
+    --darkColor1: #3d4f21; 
+    --darkColor2: #7d9253;
+    --lightColor1: #cddba7;
     --lightColor2: #E0E1DD; 
     --white: #fff;
+    /* FOR HEADER AND NAVBAR */
+    --colorOne: #C0EEE4;
+    --colorTwo: #F8F988;
+    --colorThree: #FFCAC8;
+    --colorFour: #FF9E9E;
 }
 body {
     font-family: 'Mukta', sans-serif;
     color: var(--white);
     height: 100vh;
+    
 }
+/* HEADER AND NAVBAR STYLING */
+header {
+    min-width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    background-color: var(--colorOne);
+    display: flex;
+    flex-direction: row; 
+}
+
+nav {
+    background-color: var(--colorTwo);
+}
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:400px) {
+    header {
+        min-width: 400px;
+    }
+}
+
+
 h1 {
     font-family: 'Unbounded', cursive;
     color: var(--white);
