@@ -1,0 +1,127 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Unbounded:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Unbounded:wght@300&display=swap');
+/* GENERAL STYLING AND VARIABLES */
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --black: #000; 
+    --darkColor1: #1B263B; 
+    --darkColor2: #415A77;
+    --lightColor1: #778DA9;
+    --lightColor2: #E0E1DD; 
+    --white: #fff;
+}
+body {
+    font-family: 'Mukta', sans-serif;
+    color: var(--white);
+    height: 100vh;
+}
+h1 {
+    font-family: 'Unbounded', cursive;
+    color: var(--white);
+}
+
+/* SPECIFIC STYLING */
+.main-container {
+    min-width: 400px;
+    width: 90%;
+    max-width: 768px;
+    margin: auto;
+    padding:50px 30px; 
+    box-sizing: border-box;
+    border-radius: 2px;
+    /* border: 2px solid var(--darkColor1); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    background: var(--lightColor1);
+    text-align: center; 
+}
+.container-one {
+    background: var(--darkColor2);
+    padding: 10px;
+    border-radius: 2px;
+}
+.one div {
+    margin: 10px 0;
+}
+.span-one {
+    color: var(--lightColor1);
+    font-weight: bold;
+}
+input, textarea {
+    font-family: 'Mukta', sans-serif;
+
+}
+input[type=text], input[type=date], input[type=number], select {
+    outline:none;
+    background: var(--darkColor2);
+    border: none;
+    border-bottom: 1px solid var(--black);
+    height: 17px;
+    color: var(--lightColor2);
+    text-align: center;
+}
+input[type=text]:focus {
+    outline:none;
+    color: var(--lightColor2);
+}
+textarea {
+    outline:none;
+    color: var(--lightColor2);
+    border: none;
+    margin-top: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    color: var(--black);
+}
+input[type=date]:focus {
+    outline:none;
+    background: var(--darkColor2);
+    border: none;
+    border-bottom: 1px solid black;
+}
+input[type=radio] {
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    background: white;
+    border-radius: 50%;
+    transition: all 0.3s ease-out;
+    /* accent-color: var(--); */
+}
+input[type=radio]:focus {
+    outline: transparent;
+    background: #385F71;
+    border: 3px solid var(--lightColor2);
+}
+    
+
+input[type=checkbox] {
+    /* accepts outline */
+    accent-color: var(--lightColor1); /* visible when box is checked */
+}
+input[type=checkbox]:hover {
+    outline: none;
+    accent-color: var(--darkColor1);
+}
+.span-two {
+    font-size: 14px;
+    color: var(--darkColor1);
+}
+div.buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+button {
+    padding: 1px 7px;
+}
+button:hover {
+    outline: none;
+
+}
